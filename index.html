@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,18 @@
     <title>Emoji o site</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
+    <main class="container">
+        <header class="header">
+            <div>
+                <span class="eyebrow">EMOJI HUB</span>
+                <h1>Encontre seu emoji</h1>
+                <p>Pesquise, filtre e copie emojis de forma rápida.</p>
+            </div>
+        </header>
+    </main>
+
     <button OnClick="fetchEmoji()">rnd Emoji</button>
     <button OnClick="tudo()">todos</button>
     <label for="catSelect">Categoria</label>
@@ -15,15 +27,16 @@
 
     </select>
     <label for="gpSelect">Grupo</label>
-        <select id="gpSelect">
+    <select id="gpSelect">
 
     </select>
     <button OnClick="fetchGroup()">Buscar Grupo</button>
     <button OnClick="fetchCategory()">Buscar Categoria</button>
     <div id="emoji">
-        
+
     </div>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
