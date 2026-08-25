@@ -1,5 +1,7 @@
+/* Variaveis globais e reset */
 @import url(global.css);
 
+/* Estilos para os filtros */
 .filtros {
   display: flex;
   justify-content: space-between;
@@ -7,6 +9,7 @@
   margin-top: 20px;
 }
 
+/* Estilos para o grupo de filtros */
 .filtro-group {
   display: flex;
   align-items: center;
@@ -17,6 +20,9 @@
   background: #fafaff;
 }
 
+
+
+/* Estilos para os botões dentro do grupo de filtros */
 .filtro-group button {
   flex: 0 0 auto;
   background: var(--soft-primary);

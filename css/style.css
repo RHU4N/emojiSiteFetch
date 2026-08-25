@@ -1,9 +1,12 @@
+/* Estilos principais do site, onde importa os estilos de todos os componentes para serem usadoss */
 @import url(global.css);
 @import url(header.css);
 @import url(controles.css);
 @import url(filtros.css);
 @import url(emoji.css);
 
+/* Estilos gerais */
+/* Estilos para o corpo do documento */
 body {
     min-height: 100vh;
     font-family: "Inter", sans-serif;
@@ -12,17 +15,20 @@ body {
     line-height: 1.5;
 }
 
+/* Estilos para o container principal */
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 2rem;
 }
 
+/* Estilos para os botões */
 button {
     border: 0;
     cursor: pointer;
 }
 
+/* Estilos para o conteúdo vazio */
 .vazio{
     grid-column: 1 / -1;
     padding: 50px 20px;
@@ -30,10 +36,12 @@ button {
     text-align: center;
 }
 
+/* Estilos para mensagens de erro */
 .error{
     color: #c0392b;
 }
 
+/* Responsividade */
 @media (max-width: 900px) {
     .emoji-grid {
         grid-template-columns: repeat(4, minmax(0, 1fr));

@@ -1,5 +1,7 @@
+/* Variaveis globais e reset */
 @import url(global.css);
 
+/* Estilos para a seção de resultados */
 .result-section{
     margin-top: 32px;
 }
@@ -16,23 +18,20 @@
     font-weight: 700;
 }
 
+/* estilo para id de conta de respostas */
 #resultCount{
     font-size: 16px;
     color: var(--muted);
 }
 
+/* Estilos para a grade de emojis */
 .emoji-grid{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
     gap: 10px;
 }
 
-.emoji-grid {
-    display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 15px;
-}
-
+/* Estilos para o cartão de emoji */
 .emoji-card {
     min-height: 170px;
     padding: 20px 15px 15px;
@@ -54,6 +53,7 @@
     box-shadow: var(--shadow);
 }
 
+/* Estilo para conteudo do card */
 .emoji-img {
     display: flex;
     align-items: center;
@@ -73,6 +73,7 @@
     text-overflow: clip;
 }
 
+/* Estilos para o botão de cópia */
 .copy-btn {
     width: 100%;
     min-height: 38px;
