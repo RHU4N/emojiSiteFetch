@@ -18,6 +18,18 @@
                 <p>Pesquise, filtre e copie emojis de forma rápida.</p>
             </div>
         </header>
+
+        <section class="controls">
+            <div class="pesquisar">
+                <input id="searchInput" type="search" placeholder="Pesquisar emoji por nome...">
+                <button class="btn-p" onclick="searchEmoji()">Pesquisar</button>
+            </div>
+            <button class="rdm-btn" onclick="randomEmoji()">
+                <span>🎲</span>
+                Emoji aleatório
+            </button>
+        </section>
+
     </main>
 
     <button OnClick="fetchEmoji()">rnd Emoji</button>

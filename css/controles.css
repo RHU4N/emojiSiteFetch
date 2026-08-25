@@ -1,0 +1,83 @@
+.controle {
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.pesquisar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.pesquisar input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]::placeholder {
+  color: var(--muted);
+}
+
+input,
+select {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 14px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  outline: none;
+  background: var(--surface);
+  color: var(--text);
+  transition: 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px var(--soft-primary);
+}
+
+.btn-p {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-p:hover {
+  background: var(--primary-dark);
+  transform: translateY(-1px);
+}
+
+.all-btn,
+.rdm-btn,
+.btn-p {
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.rdm-btn {
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid var(--primary);
+  color: var(--muted);
+  background: var(--surface);
+}
+
+.rdm-btn span {
+  margin-right: 10px;
+}
+
+.rdm-btn:hover {
+  border: 2.5px solid var(--soft-primary);
+  transform: translateY(-1px);
+}

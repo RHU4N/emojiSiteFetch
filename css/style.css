@@ -1,20 +1,6 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-:root {
-    --bg: #f6f7fb;
-    --surface: #ffffff;
-    --border: #e4e7ec;
-    --text: #171923;
-    --muted: #667085;
-    --primary: #6c5ce7;
-    --primary-dark: #5748c7;
-    --soft-primary: #eeebff;
-    --shadow: 0 10px 30px rgba(31, 35, 52, 0.08);
-}
+@import url(global.css);
+@import url(header.css);
+@import url(controles.css);
 
 body {
     min-height: 100vh;
@@ -30,27 +16,7 @@ body {
     padding: 2rem;
 }
 
-.header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.header h1 {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--primary);
-}
-
-.header p {
-    font-size: 1rem;
-    color: var(--muted);
-}
-
-.eyebrow{
-    display: inline-block;
-    margin-bottom: 8px;
-    color: var(--primary);
-    font-size: 0.75rem;
-    font-weight: 800;
-    letter-spacing: 0.14em;
+button {
+    border: 0;
+    cursor: pointer;
 }

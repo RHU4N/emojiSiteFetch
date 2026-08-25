@@ -2,7 +2,7 @@ const emoji = document.getElementById("emoji");
 const catSelect = document.getElementById("catSelect");
 const gpSelect = document.getElementById("gpSelect");
 
-async function fetchEmoji() {
+async function randomEmoji() {
     try {
         emoji.innerHTML = ""; // Clear previous emojis
         const response = await fetch("https://emojihub.yurace.pro/api/random");
