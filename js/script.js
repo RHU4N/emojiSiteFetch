@@ -27,7 +27,7 @@ async function getCard(data) {
     card.appendChild(div);
     const emojiElement = document.createElement("div");
     emojiElement.classList.add("emoji-img");
-    emojiElement.innerHTML = emojiData.htmlCode;
+    emojiElement.innerHTML = Array.isArray(emojiData.htmlCode) ? emojiData.htmlCode.join("") : emojiData.htmlCode;;
     div.appendChild(emojiElement);
     const emojiNameElement = document.createElement("div");
     emojiNameElement.classList.add("emoji-nome");
@@ -42,6 +42,8 @@ async function getCard(data) {
     copyButton.addEventListener("click", () => {
       const textarea = document.createElement("textarea"); //cria um textare para converter o htmlCode em emoji e copiar o emoji
       textarea.innerHTML = emojiData.htmlCode;
+
+          textarea.innerHTML = Array.isArray(emojiData.htmlCode) ? emojiData.htmlCode.join("") : emojiData.htmlCode;
 
       copyEmoji(textarea.value);
     });
