@@ -48,6 +48,12 @@ async function getCard(data) {
       copyEmoji(textarea.value);
     });
     emoji.appendChild(card);
+    
+    card.addEventListener("click", () => {
+      const textarea = document.createElement("textarea");
+      textarea.innerHTML = Array.isArray(emojiData.htmlCode) ? emojiData.htmlCode.join("") : emojiData.htmlCode;
+      copyEmoji(textarea.value);
+    });
   }
 }
 
