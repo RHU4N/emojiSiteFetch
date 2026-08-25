@@ -1,4 +1,4 @@
-/* Estilos principais do site, onde importa os estilos de todos os componentes para serem usadoss */
+/* Estilos principais do site, onde importa os estilos de todos os componentes para serem usados */
 @import url(global.css);
 @import url(header.css);
 @import url(controles.css);
@@ -6,7 +6,6 @@
 @import url(emoji.css);
 
 /* Estilos gerais */
-/* Estilos para o corpo do documento */
 body {
     min-height: 100vh;
     font-family: "Inter", sans-serif;
@@ -29,7 +28,7 @@ button {
 }
 
 /* Estilos para o conteúdo vazio */
-.vazio{
+.vazio {
     grid-column: 1 / -1;
     padding: 50px 20px;
     color: var(--muted);
@@ -37,7 +36,7 @@ button {
 }
 
 /* Estilos para mensagens de erro */
-.error{
+.error {
     color: #c0392b;
 }
 
@@ -54,17 +53,38 @@ button {
         padding-top: 28px;
     }
 
-    .filtro {
-        grid-template-columns: 1fr;
+    /* Coloca os filtros de categoria e grupo um abaixo do outro */
+    .filtros {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* Faz cada grupo ocupar somente a largura disponível */
+    .filtro-group {
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .emoji-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-
 }
 
 @media (max-width: 400px) {
+    .filtro-group {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 16px;
+    }
+
+    .filtro-group label,
+    .filtro-group select,
+    .filtro-group button {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     .emoji-grid {
         grid-template-columns: 1fr;
     }
