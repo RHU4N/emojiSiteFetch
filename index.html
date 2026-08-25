@@ -23,7 +23,7 @@
 
         <!-- //section com a classe controle(onde tem pesquisa, filtros e botões para buscar emoji aleatório e mostrar todos) -->
         <section class="controle">
-            <div class="pesquisar"> //pesquisa de emoji
+            <div class="pesquisar">
                 <!-- //input para inserir o nome do emoji com o id pesquisa pra usar no js -->
                 <input id="pesquisa" type="search" onchange="searchEmoji()" placeholder="Pesquisar emoji por nome...">
                 <!-- //botão para pesquisar emoji com a função searchEmoji() no onclick -->
@@ -41,9 +41,8 @@
                 <!-- //div com a classe filtro-group(onde tem o filtro de categoria) -->
                 <div class="filtro-group">
                     <!-- //label para o select de categoria com o id catSelect o for serve pra linkar com o select de id catSelect -->
-                    
                     <label for="catSelect">Categoria</label>
-                    <!-- //select para selecionar a categoria com o id catSelect para usar no js(para populara as opções),com a primeira opção "Selecione uma categoria" -->
+                    <!-- //select para selecionar a categoria com o id catSelect para usar no js(para popular as opções),com a primeira opção "Selecione uma categoria" -->
                     <select id="catSelect">
                         <option value="Selecione uma categoria">Selecione uma categoria</option>
                     </select>
@@ -54,8 +53,7 @@
                 <!-- //div com a classe filtro-group(onde tem o filtro de grupo) -->
                 <div class="filtro-group">
                     <label for="gpSelect">Grupo</label> <!--//Label mesma logica do label de categoria porem pra grupo-->
-                    <select id="gpSelect"><!--//select para selecionar o grupo com o id gpSelect para usar no js(para
-                        populara as opções), com a primeira opção "Selecione um grupo" -->
+                    <select id="gpSelect"><!--//select para selecionar o grupo com o id gpSelect para usar no js(para popular as opções), com a primeira opção "Selecione um grupo" -->
                         <option value="Selecione um grupo">Selecione um grupo</option>
                     </select>
 
@@ -85,9 +83,6 @@
         </section>
 
     </main>
-
-
-
 
     <script src="js/script.js"></script>
 </body>
