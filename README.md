@@ -246,15 +246,17 @@ Este projeto foi desenvolvido como parte da **Sprint — Consumo de API**, tendo
 ## 🔗 Links
 
 - **Repositório:** https://github.com/RHU4N/emojiSiteFetch
-- **Deploy:** _adicione aqui o link da Vercel após o deploy_
+- **Deploy:** https://emoji-site-fetch.vercel.app/
 - **API:** https://emojihub.yurace.pro/api
 - **EmojiHub:** https://github.com/cheatsnake/emojihub
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Autores
 
 **Rhuan Santana da Silva**
+
+[**ISABELA ANDRELINO SOUZA**](https://github.com/isabzw)
 
 - GitHub: https://github.com/RHU4N
 - Projeto: https://github.com/RHU4N/emojiSiteFetch
