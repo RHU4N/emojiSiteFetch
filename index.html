@@ -5,81 +5,80 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emoji o site</title> //titulo do site
-    <link rel="stylesheet" href="css/style.css">//importando o css
+    <title>Emoji o site</title> <!--titulo do site-->
+    <link rel="stylesheet" href="css/style.css"><!--importando o css-->
 </head>
 
 <body>
-    //conteudo do site
-    <main class="container"> //tag main com a classe container
-        <header class="header">//tag header com a classe header
-            //conteudo do header
+    <!-- conteudo do site -->
+    <main class="container"> <!--//tag main com a classe container-->
+        <header class="header"><!--//tag header com a classe header-->
+            <!-- conteudo do header -->
             <div>
-                <span class="eyebrow">EMOJI HUB</span>//span com texto da parte superior do header
-                <h1>Encontre seu emoji</h1> //titulo do header
-                <p>Pesquise, filtre e copie emojis de forma rápida.</p> //paragrafo do header
+                <span class="eyebrow">EMOJI HUB</span><!--//span com texto da parte superior do header -->
+                <h1>Encontre seu emoji</h1> <!--//titulo do header-->
+                <p>Pesquise, filtre e copie emojis de forma rápida.</p> <!--//paragrafo do header-->
             </div>
         </header>
 
-        //section com a classe controle(onde tem pesquisa, filtros e botões para buscar emoji aleatório e mostrar todos)
+        <!-- //section com a classe controle(onde tem pesquisa, filtros e botões para buscar emoji aleatório e mostrar todos) -->
         <section class="controle">
             <div class="pesquisar"> //pesquisa de emoji
-                //input para inserir o nome do emoji com o id pesquisa pra usar no js
+                <!-- //input para inserir o nome do emoji com o id pesquisa pra usar no js -->
                 <input id="pesquisa" type="search" onchange="searchEmoji()" placeholder="Pesquisar emoji por nome...">
-                //botão para pesquisar emoji com a função searchEmoji() no onclick
+                <!-- //botão para pesquisar emoji com a função searchEmoji() no onclick -->
                 <button class="btn-p" onclick="searchEmoji()">Pesquisar</button>
             </div>
 
-            //botão para buscar emoji aleatório com a função randomEmoji() no onclick
+            <!-- //botão para buscar emoji aleatório com a função randomEmoji() no onclick -->
             <button class="rdm-btn" onclick="randomEmoji()">
                 <span>🎲</span>
                 Emoji aleatório
             </button>
 
-            //section com a classe filtros(onde tem os filtros de categoria e grupo)
+            <!-- //section com a classe filtros(onde tem os filtros de categoria e grupo) -->
             <div class="filtros">
-                //div com a classe filtro-group(onde tem o filtro de categoria)
+                <!-- //div com a classe filtro-group(onde tem o filtro de categoria) -->
                 <div class="filtro-group">
-                    //label para o select de categoria com o id catSelect o for serve pra linkar com o select de id
-                    catSelect
+                    <!-- //label para o select de categoria com o id catSelect o for serve pra linkar com o select de id catSelect -->
+                    
                     <label for="catSelect">Categoria</label>
-                    //select para selecionar a categoria com o id catSelect para usar no js(para populara as opções),
-                    com a primeira opção "Selecione uma categoria"
+                    <!-- //select para selecionar a categoria com o id catSelect para usar no js(para populara as opções),com a primeira opção "Selecione uma categoria" -->
                     <select id="catSelect">
                         <option value="Selecione uma categoria">Selecione uma categoria</option>
                     </select>
-                    //botão para buscar emoji por categoria com a função fetchCategory() no onclick
+                    <!-- //botão para buscar emoji por categoria com a função fetchCategory() no onclick -->
                     <button onclick="fetchCategory()">Buscar Categoria</button>
                 </div>
 
-                //div com a classe filtro-group(onde tem o filtro de grupo)
+                <!-- //div com a classe filtro-group(onde tem o filtro de grupo) -->
                 <div class="filtro-group">
-                    <label for="gpSelect">Grupo</label> //Label mesma logica do label de categoria porem pra grupo
-                    <select id="gpSelect">//select para selecionar o grupo com o id gpSelect para usar no js(para
-                        populara as opções), com a primeira opção "Selecione um grupo"
+                    <label for="gpSelect">Grupo</label> <!--//Label mesma logica do label de categoria porem pra grupo-->
+                    <select id="gpSelect"><!--//select para selecionar o grupo com o id gpSelect para usar no js(para
+                        populara as opções), com a primeira opção "Selecione um grupo" -->
                         <option value="Selecione um grupo">Selecione um grupo</option>
                     </select>
 
-                    //botão para buscar emoji por grupo com a função fetchGroup() no onclick
+                    <!-- //botão para buscar emoji por grupo com a função fetchGroup() no onclick -->
                     <button onclick="fetchGroup()">Buscar Grupo</button>
 
                 </div>
 
             </div>
-            //botão para mostrar todos os emojis com a função tudo() no onclick
+            <!-- //botão para mostrar todos os emojis com a função tudo() no onclick -->
             <button class="all-btn" onclick="tudo()">Mostrar Todos</button>
         </section>
 
-        //section com a classe result-section(onde vai mostrar os emojis)
+        <!-- section com a classe result-section(onde vai mostrar os emojis) -->
         <section class="result-section">
-            //div com a classe result-header(onde tem o titulo da section de resultado e a quantidade de emojis encontrados)
+            <!-- //div com a classe result-header(onde tem o titulo da section de resultado e a quantidade de emojis encontrados) -->
             <div class="result-header">
-                //titulo da section de resultado  
+                <!-- //titulo da section de resultado   -->
                 <h2>Emojis</h2>
-                //span com o id resultCount(para ser puxado no js) para mostrar a quantidade de emojis encontrados
+                <!-- //span com o id resultCount(para ser puxado no js) para mostrar a quantidade de emojis encontrados -->
                 <span id="resultCount">0 emojis</span>
             </div>
-            //div com a classe emoji-grid(onde vai ser exibido os emojis)
+            <!-- //div com a classe emoji-grid(onde vai ser exibido os emojis) -->
             <div id="emoji" class="emoji-grid">
 
             </div>
