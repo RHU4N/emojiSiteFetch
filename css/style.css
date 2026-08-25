@@ -1,6 +1,7 @@
 @import url(global.css);
 @import url(header.css);
 @import url(controles.css);
+@import url(filtros.css);
 
 body {
     min-height: 100vh;

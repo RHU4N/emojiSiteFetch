@@ -19,31 +19,45 @@
             </div>
         </header>
 
-        <section class="controls">
+        <section class="controle">
             <div class="pesquisar">
                 <input id="searchInput" type="search" placeholder="Pesquisar emoji por nome...">
                 <button class="btn-p" onclick="searchEmoji()">Pesquisar</button>
             </div>
+
             <button class="rdm-btn" onclick="randomEmoji()">
                 <span>🎲</span>
                 Emoji aleatório
             </button>
+
+            <div class="filtros">
+                <div class="filtro-group">
+                    <label for="catSelect">Categoria</label>
+                    <select id="catSelect">
+                        <option value="">Selecione uma categoria</option>
+                    </select>
+                    <button onclick="fetchCategory()">Buscar Categoria</button>
+                </div>
+
+                <div class="filtro-group">
+                    <label for="gpSelect">Grupo</label>
+                    <select id="gpSelect">
+                        <option value="">Selecione um grupo</option>
+                    </select>
+
+                    <button onclick="fetchGroup()">Buscar Grupo</button>
+
+                </div>
+
+
+            </div>
+
+            <button class="all-btn" onclick="tudo()">Mostrar Todos</button>
         </section>
 
     </main>
 
-    <button OnClick="fetchEmoji()">rnd Emoji</button>
-    <button OnClick="tudo()">todos</button>
-    <label for="catSelect">Categoria</label>
-    <select id="catSelect">
 
-    </select>
-    <label for="gpSelect">Grupo</label>
-    <select id="gpSelect">
-
-    </select>
-    <button OnClick="fetchGroup()">Buscar Grupo</button>
-    <button OnClick="fetchCategory()">Buscar Categoria</button>
     <div id="emoji">
 
     </div>

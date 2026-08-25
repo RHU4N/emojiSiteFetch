@@ -1,0 +1,31 @@
+.filtros {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.filtro-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px 30px;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+  background: #fafaff;
+}
+
+.filtro-group button {
+  flex: 0 0 auto;
+  background: var(--soft-primary);
+  color: var(--primary-dark);
+  min-height: 46px;
+  padding: 0 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.filtro-group button:hover {
+  background: #ded9ff;
+}

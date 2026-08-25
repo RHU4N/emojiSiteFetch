@@ -81,3 +81,16 @@ select:focus {
   border: 2.5px solid var(--soft-primary);
   transform: translateY(-1px);
 }
+
+.all-btn {
+    width: 100%;
+    margin-top: 14px;
+    background: #f0f1f5;
+    color: var(--text);
+}
+
+.all-btn:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-1px);
+}
