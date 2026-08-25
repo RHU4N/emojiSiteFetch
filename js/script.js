@@ -160,5 +160,25 @@ function copyEmoji(emojiCode) {
   alert("Emoji copiado!");
 }
 
+async function searchEmoji() {
+    try{
+        const seachValue = pesquisa.value.trim().toLowerCase();
+        if(!seachValue){
+            tudo();
+            return;
+        }
+        emoji.innerHTML = '<div class="empty-state">Carregando...</div>';
+        const response = await fetch(`https://emojihub.yurace.pro/api/search?q=${seachValue}`);
+        const data = await response.json();
+        getCard(data);
+    }
+        catch (error) {
+        console.error("Error searching emoji:", error);
+        emoji.innerHTML = '<div class="empty-state error-state">Erro ao pesquisar emojis.</div>';
+    }
+}
+pesquisa.addEventListener("input", searchEmoji);
+
 allGP();
 allCat();
+tudo();
